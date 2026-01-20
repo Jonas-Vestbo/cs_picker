@@ -49,18 +49,18 @@ apply_scheme = function(colorscheme)
     if not ok then
         vim.notify("Failed to apply colorschemes: from apply_scheme"..err, vim.log.levels.ERROR)
     end
-    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })         -- main text area
-    vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })       -- unfocused windows
-    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })    -- floating windows
-    vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" })     -- gutter
-    vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "none" })    -- ~ lines
-
-    -- Make completion and documentation window backgrounds transparent
-    vim.api.nvim_set_hl(0, "Pmenu", { bg = "none" })          -- Completion menu
-    vim.api.nvim_set_hl(0, "PmenuSel", { bg = "#333333" })    -- Selected item
-    vim.api.nvim_set_hl(0, "PmenuThumb", { bg = "#555555" })  -- Scrollbar
-    vim.api.nvim_set_hl(0, "PmenuSbar", { bg = "none" })      -- Scrollbar background
-    vim.api.nvim_set_hl(0, "CmpDocumentation", { bg = "none" }) -- Doc window
+    -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })         -- main text area
+    -- vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })       -- unfocused windows
+    -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })    -- floating windows
+    -- vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" })     -- gutter
+    -- vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "none" })    -- ~ lines
+    --
+    -- -- Make completion and documentation window backgrounds transparent
+    -- vim.api.nvim_set_hl(0, "Pmenu", { bg = "none" })          -- Completion menu
+    -- vim.api.nvim_set_hl(0, "PmenuSel", { bg = "#333333" })    -- Selected item
+    -- vim.api.nvim_set_hl(0, "PmenuThumb", { bg = "#555555" })  -- Scrollbar
+    -- vim.api.nvim_set_hl(0, "PmenuSbar", { bg = "none" })      -- Scrollbar background
+    -- vim.api.nvim_set_hl(0, "CmpDocumentation", { bg = "none" }) -- Doc window
 
     -- Item abbreviation (main text)
     vim.api.nvim_set_hl(0, "CmpItemAbbr",         { fg = "#cdd6f4", bg = "none" })
